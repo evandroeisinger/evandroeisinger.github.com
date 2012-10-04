@@ -1,0 +1,52 @@
+// colours
+
+$black: #323232;
+
+$pastel: #F1D9A4;
+
+$orange: #DB5A3D;
+
+$grape: #481A34;
+
+$wine: #541E3B;
+
+
+// font-sizes
+
+@mixin mini-font { font-size: 11px; line-height: 14px; }
+
+@mixin small-font { font-size: 12px; line-height: 16px; }
+
+@mixin normal-font { font-size: 13px; line-height: 17px; }
+
+@mixin big-font { font-size: 15px; line-height: 22px; }
+
+@mixin extra-font { font-size: 18px; line-height: 26px; letter-spacing: -1px; }
+
+@mixin god-font { font-size: 32px; line-height: 50px; letter-spacing: -1px; }
+
+
+// font-families
+
+$no-serif: "Proxima Nova", "Arial";
+
+$serif: "Droid Serif", "Georgia";
+
+// selection
+
+::-moz-selection {
+    background: $orange;
+    text-shadow: none;
+}
+
+::selection {
+    background: $orange;
+    text-shadow: none;
+}
+
+// body
+
+body {
+	background: url("../img/bg.png");
+	color: $pastel;
+}

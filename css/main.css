@@ -1,0 +1,11 @@
+::-moz-selection {
+  background: #db5a3d;
+  text-shadow: none; }
+
+::selection {
+  background: #db5a3d;
+  text-shadow: none; }
+
+body {
+  background: url("../img/bg.png");
+  color: #f1d9a4; }
