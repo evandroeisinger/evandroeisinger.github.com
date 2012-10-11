@@ -1,6 +1,6 @@
 var Main = (function() {
 	
-	var $container = $('.wrapper'),						
+	var $container = $('.pages'),						
 		$left 	= $container.find('.page.left'),
 		$middle = $container.find('.page.middle'),
 		$right 	= $container.find('.page.right'),
