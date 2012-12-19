@@ -22,13 +22,9 @@
 	    // validate _gaq object and push error
  		application._gaq ? _gaq.push(['_trackEvent', 'Errors', message, file, line ]) : false;
  		
- 		console.log(application._gaq);
-
  		// show error on console
 	    return false;
 	
 	});
 
 })( window );
-
-test(123)
