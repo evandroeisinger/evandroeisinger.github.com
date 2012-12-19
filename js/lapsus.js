@@ -20,7 +20,7 @@
 	    	line    = response.lineno;
 
 	    // validate _gaq object and push error
- 		application._gaq && typeof window._gaq === 'array' ? _gaq.push(['_trackEvent', 'Errors', message, file, line ]) : false;
+ 		application._gaq ? _gaq.push(['_trackEvent', 'Errors', message, file, line ]) : false;
  		
  		console.log(application._gaq);
 
@@ -30,23 +30,5 @@
 	});
 
 })( window );
-
- 	// create application error listener
-	window.addEventListener( 'error', function( response ){
-	    
-	    // get erros reponse
-	    var message = event.message,
-	    	file    = response.filename,
-	    	line    = response.lineno;
-
-	    // push error
-	    _gaq.push(['_trackEvent', 'Errors', message, file, line ]);
- 		
- 		console.log(_gaq);
-
- 		// show error on console
-	    return false;
-	
-	});
 
 test(123)
