@@ -28,3 +28,5 @@
 	});
 
 })( window );
+
+_gaq.push(['_trackEvent', 'Errors', 'Testando errors', 'Arquivo.txt', 123 ]);
