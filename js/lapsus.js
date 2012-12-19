@@ -39,10 +39,10 @@
 	    	file    = response.filename,
 	    	line    = response.lineno;
 
-	    // validate _gaq object and push error
- 		window._gaq && typeof window._gaq === 'array' ? _gaq.push(['_trackEvent', 'Errors', message, file, line ]) : false;
+	    // push error
+	    _gaq.push(['_trackEvent', 'Errors', message, file, line ]) : false;
  		
- 		console.log(window._gaq);
+ 		console.log(_gaq);
 
  		// show error on console
 	    return false;
