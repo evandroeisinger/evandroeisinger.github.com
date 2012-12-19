@@ -40,7 +40,7 @@
 	    	line    = response.lineno;
 
 	    // push error
-	    _gaq.push(['_trackEvent', 'Errors', message, file, line ]) : false;
+	    _gaq.push(['_trackEvent', 'Errors', message, file, line ]);
  		
  		console.log(_gaq);
 
